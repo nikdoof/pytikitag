@@ -1,0 +1,579 @@
+2009-02-01 00:28:47,011 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: if=http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:28:47,024 [main] DEBUG com.tikitag.client.Parameters -   parameter part: if
+2009-02-01 00:28:47,024 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:28:47,024 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: endpoint=http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:28:47,024 [main] DEBUG com.tikitag.client.Parameters -   parameter part: endpoint
+2009-02-01 00:28:47,025 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:28:47,025 [main] DEBUG com.tikitag.client.Parameters - Parameters(http://acs.tikitag.com/tikitag-soap/correlation?wsdl, http://acs.tikitag.com/tikitag-soap/correlation, null, null)
+2009-02-01 00:28:48,299 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:28:48,319 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:114)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:28:48,685 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.ClientLifecycleHandler.onTikitagClientStarted(ClientLifecycleHandler.java:110)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:99)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:28:50,073 [main] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Client started, pinged server.
+2009-02-01 00:28:50,286 [Thread-5] INFO  com.tikitag.client.tagservice.impl.ReaderManager - Starting to detect readers...
+2009-02-01 00:28:50,287 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - Detected new terminal: PC/SC terminal ACS ACR 38U-CCID 00 00
+2009-02-01 00:28:50,312 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetCardInfo response = 065441005C162D36
+2009-02-01 00:28:50,316 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetSerialFromCard response = 003273
+2009-02-01 00:28:50,334 [pool-1-thread-1] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - New reader detected, but already discovered, no further action.
+2009-02-01 00:28:50,365 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - -> Succesfully added new Tikitag terminal !
+2009-02-01 00:28:50,374 [Thread-6] INFO  com.tikitag.client.tagservice.impl.Acr122TagReader - Starting to poll for tags on Reader[PC/SC terminal ACS ACR 38U-CCID 00 00:065441005C162D36]...
+2009-02-01 00:28:50,429 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:28:50,445 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:28:50,460 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:28:50,476 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:28:50,490 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D5410015088B4C7B192D9FFBB63BD500000000
+2009-02-01 00:28:50,491 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000))
+2009-02-01 00:28:50,491 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - NoTagsState -> CandidateActionState
+2009-02-01 00:28:51,991 [Put Threshold Timer] DEBUG TagFSM.TagFSM-19315300 - putThresholdReached
+2009-02-01 00:28:51,992 [Put Threshold Timer] DEBUG TagFSM.TagFSM-19315300 - firePut(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:28:51,992 [Put Threshold Timer] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.firePut(MonitorSupport.java:85)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.firePut(TagStateMachine.java:136)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onPutThresholdReached(CandidateActionState.java:25)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine$1.run(TagStateMachine.java:86)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-02-01 00:28:51,995 [Put Threshold Timer] DEBUG TagFSM.TagFSM-19315300 - CandidateActionState -> CandidateContextState
+2009-02-01 00:29:03,229 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - tagRemoved(Tag(04D34CB9232580))
+2009-02-01 00:29:03,230 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - fireRemove(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:29:03,230 [Thread-6] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.fireRemove(MonitorSupport.java:93)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.fireRemove(TagStateMachine.java:141)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateContextState.onTagRemoved(CandidateContextState.java:16)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.tagRemoved(TagStateMachine.java:56)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.handlePollResponse(Acr122TagReader.java:169)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.access$500(Acr122TagReader.java:36)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader$TagDetector.run(Acr122TagReader.java:284)
+	at java.lang.Thread.run(Thread.java:619)
+2009-02-01 00:29:03,232 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - CandidateContextState -> NoTagsState
+2009-02-01 00:29:03,339 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:29:03,354 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:29:03,370 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:29:03,384 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:29:03,445 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D54101
+2009-02-01 00:29:03,446 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C))
+2009-02-01 00:29:03,446 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - NoTagsState -> CandidateActionState
+2009-02-01 00:29:03,542 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - tagRemoved(Tag(04D34CB9232580))
+2009-02-01 00:29:03,544 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - fireTouch(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C), null)
+2009-02-01 00:29:03,544 [Thread-6] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.fireTouch(MonitorSupport.java:89)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.fireTouch(TagStateMachine.java:131)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onTagRemoved(CandidateActionState.java:17)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.tagRemoved(TagStateMachine.java:56)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.handlePollResponse(Acr122TagReader.java:169)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.access$500(Acr122TagReader.java:36)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader$TagDetector.run(Acr122TagReader.java:284)
+	at java.lang.Thread.run(Thread.java:619)
+2009-02-01 00:29:03,545 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - CandidateActionState -> NoTagsState
+2009-02-01 00:29:03,927 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:29:03,946 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:29:04,007 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54101
+2009-02-01 00:29:04,068 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D54101
+2009-02-01 00:29:04,104 [pool-1-thread-1] DEBUG com.tikitag.client.actionlauncher.NoActionApplication - Server instructed to do nothing
+2009-02-01 00:29:04,130 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D54101
+2009-02-01 00:29:04,131 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600))
+2009-02-01 00:29:04,131 [Thread-6] DEBUG TagFSM.TagFSM-19315300 - NoTagsState -> CandidateActionState
+2009-02-01 00:29:05,631 [Put Threshold Timer] DEBUG TagFSM.TagFSM-19315300 - putThresholdReached
+2009-02-01 00:29:05,631 [Put Threshold Timer] DEBUG TagFSM.TagFSM-19315300 - firePut(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600), null)
+2009-02-01 00:29:05,632 [Put Threshold Timer] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.firePut(MonitorSupport.java:85)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.firePut(TagStateMachine.java:136)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onPutThresholdReached(CandidateActionState.java:25)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine$1.run(TagStateMachine.java:86)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-02-01 00:29:05,632 [Put Threshold Timer] DEBUG TagFSM.TagFSM-19315300 - CandidateActionState -> CandidateContextState
+2009-02-01 00:29:42,631 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: if=http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:29:42,633 [main] DEBUG com.tikitag.client.Parameters -   parameter part: if
+2009-02-01 00:29:42,633 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:29:42,633 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: endpoint=http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:29:42,633 [main] DEBUG com.tikitag.client.Parameters -   parameter part: endpoint
+2009-02-01 00:29:42,637 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:29:42,637 [main] DEBUG com.tikitag.client.Parameters - Parameters(http://acs.tikitag.com/tikitag-soap/correlation?wsdl, http://acs.tikitag.com/tikitag-soap/correlation, null, null)
+2009-02-01 00:29:43,812 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:29:43,831 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:114)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:29:44,182 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.ClientLifecycleHandler.onTikitagClientStarted(ClientLifecycleHandler.java:110)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:99)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:29:48,571 [main] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Client started, pinged server.
+2009-02-01 00:29:48,758 [Thread-5] INFO  com.tikitag.client.tagservice.impl.ReaderManager - Starting to detect readers...
+2009-02-01 00:29:48,759 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - Detected new terminal: PC/SC terminal ACS ACR 38U-CCID 00 00
+2009-02-01 00:29:48,785 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetCardInfo response = 065441005C162D36
+2009-02-01 00:29:48,791 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetSerialFromCard response = 003273
+2009-02-01 00:29:48,807 [pool-1-thread-1] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - New reader detected, but already discovered, no further action.
+2009-02-01 00:29:48,828 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - -> Succesfully added new Tikitag terminal !
+2009-02-01 00:29:48,836 [Thread-6] INFO  com.tikitag.client.tagservice.impl.Acr122TagReader - Starting to poll for tags on Reader[PC/SC terminal ACS ACR 38U-CCID 00 00:065441005C162D36]...
+2009-02-01 00:29:48,892 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:29:48,909 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:29:48,924 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:29:48,938 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:29:48,953 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D5410015088B4C7B192D9FFBB63BD500000000
+2009-02-01 00:29:48,954 [Thread-6] DEBUG TagFSM.TagFSM-700852 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000))
+2009-02-01 00:29:48,954 [Thread-6] DEBUG TagFSM.TagFSM-700852 - NoTagsState -> CandidateActionState
+2009-02-01 00:29:50,454 [Put Threshold Timer] DEBUG TagFSM.TagFSM-700852 - putThresholdReached
+2009-02-01 00:29:50,454 [Put Threshold Timer] DEBUG TagFSM.TagFSM-700852 - firePut(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:29:50,455 [Put Threshold Timer] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.firePut(MonitorSupport.java:85)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.firePut(TagStateMachine.java:136)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onPutThresholdReached(CandidateActionState.java:25)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine$1.run(TagStateMachine.java:86)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-02-01 00:29:50,457 [Put Threshold Timer] DEBUG TagFSM.TagFSM-700852 - CandidateActionState -> CandidateContextState
+2009-02-01 00:31:13,248 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: if=http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:31:13,258 [main] DEBUG com.tikitag.client.Parameters -   parameter part: if
+2009-02-01 00:31:13,258 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:31:13,258 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: endpoint=http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:31:13,258 [main] DEBUG com.tikitag.client.Parameters -   parameter part: endpoint
+2009-02-01 00:31:13,259 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:31:13,259 [main] DEBUG com.tikitag.client.Parameters - Parameters(http://acs.tikitag.com/tikitag-soap/correlation?wsdl, http://acs.tikitag.com/tikitag-soap/correlation, null, null)
+2009-02-01 00:31:14,952 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:31:14,976 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:114)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:31:15,575 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.ClientLifecycleHandler.onTikitagClientStarted(ClientLifecycleHandler.java:110)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:99)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:31:17,406 [main] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Client started, pinged server.
+2009-02-01 00:31:17,793 [Thread-5] INFO  com.tikitag.client.tagservice.impl.ReaderManager - Starting to detect readers...
+2009-02-01 00:31:17,797 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - Detected new terminal: PC/SC terminal ACS ACR 38U-CCID 00 00
+2009-02-01 00:31:17,832 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetCardInfo response = 065441005C162D36
+2009-02-01 00:31:17,850 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetSerialFromCard response = 003273
+2009-02-01 00:31:17,895 [pool-1-thread-1] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - New reader detected, but already discovered, no further action.
+2009-02-01 00:31:17,952 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - -> Succesfully added new Tikitag terminal !
+2009-02-01 00:31:17,962 [Thread-6] INFO  com.tikitag.client.tagservice.impl.Acr122TagReader - Starting to poll for tags on Reader[PC/SC terminal ACS ACR 38U-CCID 00 00:065441005C162D36]...
+2009-02-01 00:31:18,017 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:31:18,033 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:31:18,049 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:31:18,064 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:31:18,079 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D5410015088B4C7B192D9FFBB63BD500000000
+2009-02-01 00:31:18,080 [Thread-6] DEBUG TagFSM.TagFSM-3559661 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000))
+2009-02-01 00:31:18,080 [Thread-6] DEBUG TagFSM.TagFSM-3559661 - NoTagsState -> CandidateActionState
+2009-02-01 00:31:19,703 [Put Threshold Timer] DEBUG TagFSM.TagFSM-3559661 - putThresholdReached
+2009-02-01 00:31:19,703 [Put Threshold Timer] DEBUG TagFSM.TagFSM-3559661 - firePut(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:31:19,704 [Put Threshold Timer] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.firePut(MonitorSupport.java:85)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.firePut(TagStateMachine.java:136)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onPutThresholdReached(CandidateActionState.java:25)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine$1.run(TagStateMachine.java:86)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-02-01 00:31:19,706 [Put Threshold Timer] DEBUG TagFSM.TagFSM-3559661 - CandidateActionState -> CandidateContextState
+2009-02-01 00:31:25,525 [Thread-6] DEBUG TagFSM.TagFSM-3559661 - tagRemoved(Tag(04D34CB9232580))
+2009-02-01 00:31:25,526 [Thread-6] DEBUG TagFSM.TagFSM-3559661 - fireRemove(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:31:25,526 [Thread-6] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.fireRemove(MonitorSupport.java:93)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.fireRemove(TagStateMachine.java:141)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateContextState.onTagRemoved(CandidateContextState.java:16)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.tagRemoved(TagStateMachine.java:56)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.handlePollResponse(Acr122TagReader.java:169)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.access$500(Acr122TagReader.java:36)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader$TagDetector.run(Acr122TagReader.java:284)
+	at java.lang.Thread.run(Thread.java:619)
+2009-02-01 00:31:25,528 [Thread-6] DEBUG TagFSM.TagFSM-3559661 - CandidateContextState -> NoTagsState
+2009-02-01 00:31:25,854 [pool-1-thread-1] DEBUG com.tikitag.client.actionlauncher.NoActionApplication - Server instructed to do nothing
+2009-02-01 00:31:46,084 [Thread-6] INFO  com.tikitag.client.tagservice.impl.Acr122TagReader - Stopped polling for tags on Reader[PC/SC terminal ACS ACR 38U-CCID 00 00:065441005C162D36]
+2009-02-01 00:31:46,085 [Thread-6] WARN  com.tikitag.client.tagservice.impl.MonitorSupport - No event dispatched for Reader[065441005C162D36, 003273], because the monitor support has not been started yet
+2009-02-01 00:31:49,199 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: if=http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:31:49,201 [main] DEBUG com.tikitag.client.Parameters -   parameter part: if
+2009-02-01 00:31:49,201 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:31:49,201 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: endpoint=http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:31:49,201 [main] DEBUG com.tikitag.client.Parameters -   parameter part: endpoint
+2009-02-01 00:31:49,203 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:31:49,203 [main] DEBUG com.tikitag.client.Parameters - Parameters(http://acs.tikitag.com/tikitag-soap/correlation?wsdl, http://acs.tikitag.com/tikitag-soap/correlation, null, null)
+2009-02-01 00:31:50,427 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:31:50,442 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:114)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:31:50,809 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.ClientLifecycleHandler.onTikitagClientStarted(ClientLifecycleHandler.java:110)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:99)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:31:52,309 [main] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Client started, pinged server.
+2009-02-01 00:31:52,550 [Thread-5] INFO  com.tikitag.client.tagservice.impl.ReaderManager - Starting to detect readers...
+2009-02-01 00:31:52,551 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - Detected new terminal: PC/SC terminal ACS ACR 38U-CCID 00 00
+2009-02-01 00:31:52,585 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetCardInfo response = 065441005C162D36
+2009-02-01 00:31:52,589 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetSerialFromCard response = 003273
+2009-02-01 00:31:52,619 [pool-1-thread-1] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - New reader detected, but already discovered, no further action.
+2009-02-01 00:31:52,643 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - -> Succesfully added new Tikitag terminal !
+2009-02-01 00:31:52,657 [Thread-6] INFO  com.tikitag.client.tagservice.impl.Acr122TagReader - Starting to poll for tags on Reader[PC/SC terminal ACS ACR 38U-CCID 00 00:065441005C162D36]...
+2009-02-01 00:31:54,423 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:31:54,446 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:31:54,460 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:31:54,474 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:31:54,489 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D5410015088B4C7B192D9FFBB63BD500000000
+2009-02-01 00:31:54,490 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000))
+2009-02-01 00:31:54,490 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - NoTagsState -> CandidateActionState
+2009-02-01 00:31:55,990 [Put Threshold Timer] DEBUG TagFSM.TagFSM-9732201 - putThresholdReached
+2009-02-01 00:31:55,991 [Put Threshold Timer] DEBUG TagFSM.TagFSM-9732201 - firePut(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:31:55,991 [Put Threshold Timer] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.firePut(MonitorSupport.java:85)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.firePut(TagStateMachine.java:136)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onPutThresholdReached(CandidateActionState.java:25)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine$1.run(TagStateMachine.java:86)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-02-01 00:31:55,994 [Put Threshold Timer] DEBUG TagFSM.TagFSM-9732201 - CandidateActionState -> CandidateContextState
+2009-02-01 00:32:25,807 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - tagRemoved(Tag(04D34CB9232580))
+2009-02-01 00:32:25,808 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - fireRemove(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:32:25,808 [Thread-6] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.fireRemove(MonitorSupport.java:93)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.fireRemove(TagStateMachine.java:141)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateContextState.onTagRemoved(CandidateContextState.java:16)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.tagRemoved(TagStateMachine.java:56)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.handlePollResponse(Acr122TagReader.java:169)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.access$500(Acr122TagReader.java:36)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader$TagDetector.run(Acr122TagReader.java:284)
+	at java.lang.Thread.run(Thread.java:619)
+2009-02-01 00:32:25,810 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - CandidateContextState -> NoTagsState
+2009-02-01 00:32:27,645 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:32:27,661 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:32:27,683 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:32:27,747 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D54101
+2009-02-01 00:32:27,808 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D54101
+2009-02-01 00:32:27,809 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D))
+2009-02-01 00:32:27,809 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - NoTagsState -> CandidateActionState
+2009-02-01 00:32:27,907 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - tagRemoved(Tag(04D34CB9232580))
+2009-02-01 00:32:27,908 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - fireTouch(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D), null)
+2009-02-01 00:32:27,908 [Thread-6] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.fireTouch(MonitorSupport.java:89)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.fireTouch(TagStateMachine.java:131)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onTagRemoved(CandidateActionState.java:17)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.tagRemoved(TagStateMachine.java:56)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.handlePollResponse(Acr122TagReader.java:169)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.access$500(Acr122TagReader.java:36)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader$TagDetector.run(Acr122TagReader.java:284)
+	at java.lang.Thread.run(Thread.java:619)
+2009-02-01 00:32:27,909 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - CandidateActionState -> NoTagsState
+2009-02-01 00:32:28,298 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:32:28,314 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:32:28,335 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:32:28,351 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:32:28,370 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D5410015088B4C7B192D9FFBB63BD500000000
+2009-02-01 00:32:28,371 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000))
+2009-02-01 00:32:28,371 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - NoTagsState -> CandidateActionState
+2009-02-01 00:32:28,688 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - tagRemoved(Tag(04D34CB9232580))
+2009-02-01 00:32:28,689 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - fireTouch(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:32:28,689 [Thread-6] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.fireTouch(MonitorSupport.java:89)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.fireTouch(TagStateMachine.java:131)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onTagRemoved(CandidateActionState.java:17)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.tagRemoved(TagStateMachine.java:56)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.handlePollResponse(Acr122TagReader.java:169)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.access$500(Acr122TagReader.java:36)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader$TagDetector.run(Acr122TagReader.java:284)
+	at java.lang.Thread.run(Thread.java:619)
+2009-02-01 00:32:28,690 [Thread-6] DEBUG TagFSM.TagFSM-9732201 - CandidateActionState -> NoTagsState
+2009-02-01 00:32:29,151 [pool-1-thread-1] DEBUG com.tikitag.client.actionlauncher.NoActionApplication - Server instructed to do nothing
+2009-02-01 00:32:37,413 [Thread-6] INFO  com.tikitag.client.tagservice.impl.Acr122TagReader - Stopped polling for tags on Reader[PC/SC terminal ACS ACR 38U-CCID 00 00:065441005C162D36]
+2009-02-01 00:32:37,414 [Thread-6] WARN  com.tikitag.client.tagservice.impl.MonitorSupport - No event dispatched for Reader[065441005C162D36, 003273], because the monitor support has not been started yet
+2009-02-01 00:44:41,900 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: if=http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:44:41,914 [main] DEBUG com.tikitag.client.Parameters -   parameter part: if
+2009-02-01 00:44:41,914 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:44:41,914 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: endpoint=http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:44:41,914 [main] DEBUG com.tikitag.client.Parameters -   parameter part: endpoint
+2009-02-01 00:44:41,915 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:44:41,915 [main] DEBUG com.tikitag.client.Parameters - Parameters(http://acs.tikitag.com/tikitag-soap/correlation?wsdl, http://acs.tikitag.com/tikitag-soap/correlation, null, null)
+2009-02-01 00:44:43,088 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:44:43,099 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:114)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:44:43,520 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.ClientLifecycleHandler.onTikitagClientStarted(ClientLifecycleHandler.java:110)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:99)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:44:44,789 [main] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Client started, pinged server.
+2009-02-01 00:44:44,983 [Thread-5] INFO  com.tikitag.client.tagservice.impl.ReaderManager - Starting to detect readers...
+2009-02-01 00:44:44,984 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - Detected new terminal: PC/SC terminal ACS ACR 38U-CCID 00 00
+2009-02-01 00:44:45,018 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetCardInfo response = 065441005C162D36
+2009-02-01 00:44:45,023 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - GetSerialFromCard response = 003273
+2009-02-01 00:44:45,043 [pool-1-thread-1] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - New reader detected, but already discovered, no further action.
+2009-02-01 00:44:45,065 [Thread-5] DEBUG com.tikitag.client.tagservice.impl.ReaderManager - -> Succesfully added new Tikitag terminal !
+2009-02-01 00:44:45,074 [Thread-6] INFO  com.tikitag.client.tagservice.impl.Acr122TagReader - Starting to poll for tags on Reader[PC/SC terminal ACS ACR 38U-CCID 00 00:065441005C162D36]...
+2009-02-01 00:44:45,130 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:44:45,146 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:44:45,161 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:44:45,176 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:44:45,191 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D5410015088B4C7B192D9FFBB63BD500000000
+2009-02-01 00:44:45,191 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000))
+2009-02-01 00:44:45,191 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - NoTagsState -> CandidateActionState
+2009-02-01 00:44:46,692 [Put Threshold Timer] DEBUG TagFSM.TagFSM-26681011 - putThresholdReached
+2009-02-01 00:44:46,692 [Put Threshold Timer] DEBUG TagFSM.TagFSM-26681011 - firePut(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:44:46,693 [Put Threshold Timer] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.firePut(MonitorSupport.java:85)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.firePut(TagStateMachine.java:136)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onPutThresholdReached(CandidateActionState.java:25)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine$1.run(TagStateMachine.java:86)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-02-01 00:44:46,695 [Put Threshold Timer] DEBUG TagFSM.TagFSM-26681011 - CandidateActionState -> CandidateContextState
+2009-02-01 00:44:58,172 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - tagRemoved(Tag(04D34CB9232580))
+2009-02-01 00:44:58,173 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - fireRemove(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:44:58,173 [Thread-6] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.fireRemove(MonitorSupport.java:93)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.fireRemove(TagStateMachine.java:141)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateContextState.onTagRemoved(CandidateContextState.java:16)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.tagRemoved(TagStateMachine.java:56)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.handlePollResponse(Acr122TagReader.java:169)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.access$500(Acr122TagReader.java:36)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader$TagDetector.run(Acr122TagReader.java:284)
+	at java.lang.Thread.run(Thread.java:619)
+2009-02-01 00:44:58,175 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - CandidateContextState -> NoTagsState
+2009-02-01 00:44:58,282 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:44:58,297 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:44:58,312 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:44:58,326 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:44:58,341 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D5410015088B4C7B192D9FFBB63BD500000000
+2009-02-01 00:44:58,342 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000))
+2009-02-01 00:44:58,342 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - NoTagsState -> CandidateActionState
+2009-02-01 00:44:58,532 [pool-1-thread-1] DEBUG com.tikitag.client.actionlauncher.NoActionApplication - Server instructed to do nothing
+2009-02-01 00:44:58,764 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - tagRemoved(Tag(04D34CB9232580))
+2009-02-01 00:44:58,764 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - fireTouch(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:44:58,765 [Thread-6] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.fireTouch(MonitorSupport.java:89)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.fireTouch(TagStateMachine.java:131)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onTagRemoved(CandidateActionState.java:17)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.tagRemoved(TagStateMachine.java:56)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.handlePollResponse(Acr122TagReader.java:169)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader.access$500(Acr122TagReader.java:36)
+	at com.tikitag.client.tagservice.impl.Acr122TagReader$TagDetector.run(Acr122TagReader.java:284)
+	at java.lang.Thread.run(Thread.java:619)
+2009-02-01 00:44:58,766 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - CandidateActionState -> NoTagsState
+2009-02-01 00:44:58,971 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Reading Mifare Ultralight : TagId[04D34CB9232580]
+2009-02-01 00:44:58,989 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=0 : D5410004D34C13B92325803F48FF7FE1100600
+2009-02-01 00:44:59,004 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=1 : D54100031DD101195501747461672E62652F6D
+2009-02-01 00:44:59,020 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=2 : D541002F30344433344342393233323538304C
+2009-02-01 00:44:59,036 [Thread-6] DEBUG com.tikitag.client.tagservice.impl.Acr122TagReader - Read page16=3 : D5410015088B4C7B192D9FFBB63BD500000000
+2009-02-01 00:44:59,036 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - tagAdded(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000))
+2009-02-01 00:44:59,036 [Thread-6] DEBUG TagFSM.TagFSM-26681011 - NoTagsState -> CandidateActionState
+2009-02-01 00:45:00,537 [Put Threshold Timer] DEBUG TagFSM.TagFSM-26681011 - putThresholdReached
+2009-02-01 00:45:00,537 [Put Threshold Timer] DEBUG TagFSM.TagFSM-26681011 - firePut(Tag(04D34CB9232580, HexData=04D34C13B92325803F48FF7FE1100600031DD101195501747461672E62652F6D2F30344433344342393233323538304C15088B4C7B192D9FFBB63BD500000000), null)
+2009-02-01 00:45:00,537 [Put Threshold Timer] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.tagservice.impl.MonitorSupport.fireTagEvent(MonitorSupport.java:118)
+	at com.tikitag.client.tagservice.impl.MonitorSupport$TagEvents.firePut(MonitorSupport.java:85)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine.firePut(TagStateMachine.java:136)
+	at com.tikitag.client.tagservice.impl.tagfsm.CandidateActionState.onPutThresholdReached(CandidateActionState.java:25)
+	at com.tikitag.client.tagservice.impl.tagfsm.TagStateMachine$1.run(TagStateMachine.java:86)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+2009-02-01 00:45:00,539 [Put Threshold Timer] DEBUG TagFSM.TagFSM-26681011 - CandidateActionState -> CandidateContextState
+2009-02-01 00:46:14,023 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: if=http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:46:14,031 [main] DEBUG com.tikitag.client.Parameters -   parameter part: if
+2009-02-01 00:46:14,031 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation?wsdl
+2009-02-01 00:46:14,031 [main] DEBUG com.tikitag.client.Parameters - Analyzing parameter: endpoint=http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:46:14,031 [main] DEBUG com.tikitag.client.Parameters -   parameter part: endpoint
+2009-02-01 00:46:14,033 [main] DEBUG com.tikitag.client.Parameters -   parameter part: http://acs.tikitag.com/tikitag-soap/correlation
+2009-02-01 00:46:14,033 [main] DEBUG com.tikitag.client.Parameters - Parameters(http://acs.tikitag.com/tikitag-soap/correlation?wsdl, http://acs.tikitag.com/tikitag-soap/correlation, null, null)
+2009-02-01 00:46:15,761 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:46:15,783 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.getClientIdPanel(TagServiceConfigurationGUI.java:114)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.buildContent(TagServiceConfigurationGUI.java:59)
+	at com.tikitag.client.gui.TagServiceConfigurationGUI.<init>(TagServiceConfigurationGUI.java:49)
+	at com.tikitag.client.TikitagClient$TagServiceConfigurationAction.<init>(TikitagClient.java:244)
+	at com.tikitag.client.TikitagClient.getTagServiceConfigurationAction(TikitagClient.java:235)
+	at com.tikitag.client.gui.SystemTrayGUI.<init>(SystemTrayGUI.java:67)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:73)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
+2009-02-01 00:46:16,274 [main] ERROR com.tikitag.client.tagservice.TagServiceConfiguration - Failed to generate ClientId: null
+java.lang.NullPointerException
+	at com.tikitag.client.tagservice.TagServiceConfiguration.generateClientId(TagServiceConfiguration.java:122)
+	at com.tikitag.client.tagservice.TagServiceConfiguration.getClientId(TagServiceConfiguration.java:107)
+	at com.tikitag.client.ClientLifecycleHandler.onTikitagClientStarted(ClientLifecycleHandler.java:110)
+	at com.tikitag.client.TikitagClient.start(TikitagClient.java:99)
+	at com.tikitag.client.TikitagClient.main(TikitagClient.java:54)
