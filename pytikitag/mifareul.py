@@ -24,6 +24,7 @@ class MiFareUL():
             return False
             
     def read_block(self, block, timeout = 100):
+        """Reads a full 8 byte page from the RFID tag"""
         
         d = None
         t = 0
@@ -33,14 +34,16 @@ class MiFareUL():
     
         while not d:
             d = self._reader.trans_rfid([0xD4, 0x40, 0x01, 0x30] + [block])
-            time.sleep(0.5)
-            t = t + 1
+
         if d:
-            return d[3:]
+            return d[3:7]
         else:
             return None
                     
     def write_block(self, block, data):
+        """Write a full 4 byte page to the writable area of the tag"""
+        if block < 0x04:
+            raise ValueError("Invalid block")
       
         pass
         d = self._reader.trans_rfid([0xD4, 0x40, 0x01, 0xA0] + [block] + data)
