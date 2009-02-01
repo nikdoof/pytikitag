@@ -1,6 +1,7 @@
 import logging
 import reader
 import time
+from smartcard.util import toHexString
 
 class MiFareUltralight():
     """Class to control MiFare Ultralight RFID Tags
@@ -14,6 +15,8 @@ class MiFareUltralight():
 
     _logger = logging.getLogger('pytikitag.mifareul')
     _reader = None
+    
+    _manf_ids = {0x04: "NXP / Phillips"}
 
     def __init__(self, pcscreader=None):
         
@@ -29,6 +32,31 @@ class MiFareUltralight():
             return True
         else:
             return False
+          
+
+    def get_manf(self):
+        """Get the IC manufacturer"""
+        return self.read_block(0x0)[0]
+    
+    def get_manf_ascii(self):
+        mid = self.get_manf()
+        if mid:
+            return self._manf_ids[mid]
+        else:
+            return None
+        
+    def get_serial(self):
+        """Get the serial number of the IC"""
+        # MiFare Serials are stored in page 0x0 and 0x1, the format is as follows
+        # MF,S1, S2, C1   S4, S5, S6
+        #
+        # Where MF is the manufacturer ID, S is a serial value and C is a check byte
+        
+        d1 = self.read_block(0x0)
+        d2 = self.read_block(0x1)
+        
+        sn = toHexString(d1[1:3] + d2)
+        return sn.replace(" ", "")        
             
     def read_block(self, block, timeout = 100):
         """Reads a full 4 byte page from the RFID tag"""
