@@ -9,6 +9,7 @@ class TikiReader():
     _readers = None
     _tiki_rfid_apdu_cmd = [0xFF, 0x00, 0x00, 0x00]
     _tiki_rfid_apdu_resp = [0xFF, 0xC0, 0x00, 0x00]
+    _tiki_rfid_apdu_fwver = [0xFF, 0x00, 0x48, 0x00, 0x00]
     
     def __init__(self, readerid = 0):
         
@@ -19,7 +20,6 @@ class TikiReader():
         
     def trans_raw(self, cmd):
         """Transmit a raw APDU command via the RFID interface of the device"""
-    
         return self._connection.transmit(cmd)
         
     def trans_rfid(self, cmd):
@@ -45,10 +45,10 @@ class TikiReader():
             
     def firmware_version(self):
         """Retreives the firmware version of the ACR122/Tikitag Reader"""
-        resp, s1, s2 = self._connection.transmit([0xFF, 0x00, 0x00, 0x48, 0x00, 0x00])
+        resp, s1, s2 = self._connection.transmit(self._tiki_rfid_apdu_fwver)
 
         if not s1 == 99:
-            return resp
+            return toASCIIString(resp)
         else:   
             return None
             
