@@ -1,4 +1,5 @@
 import mifareul
+from nfc import type2, ndef
 from smartcard.util import toHexString, toASCIIString 
 
 class TikiTag(mifareul.MiFareUltralight):
@@ -10,5 +11,9 @@ class TikiTag(mifareul.MiFareUltralight):
             return toHexString(d).replace(" ", "")[:16]
             
     def get_tag_url(self):
-            if toASCIIString(self.read_block(0x6)) == "tag.":
-                return "http://ttag.be/m/%s" % self.get_uid()
+        
+        self._tag = type2.NFCType2(self.read_tag())
+        return self._tag.ndefs[0].items[0][1]
+        
+        
+    
