@@ -3,6 +3,7 @@ import logging, sys
 from pytikitag import reader, tikitag
 from pytikitag.nfc import type2
 from smartcard.util import toHexString, toASCIIString
+import time
 
 log = logging.getLogger('pytikitag.mifareul')
 h = logging.StreamHandler(sys.stdout)
@@ -15,9 +16,12 @@ print "Tikitag ID: " + m.get_uid()
 print "Manf: " + m.get_manf_ascii() + ", Serial: " + m.get_serial()
 print ""
 print "Reading Tikitag Data..."
-print m.get_tag_url()
 
-#tag = type2.NFCType2(d)
-#print tag.ndefs[0].items
-#print toHexString(value)
-#print toASCIIString(value)
+i = 0
+
+try:
+    while not i == 1:
+        print m.get_tag_url()
+        time.sleep(1)
+except KeyboardInterrupt:
+    pass
