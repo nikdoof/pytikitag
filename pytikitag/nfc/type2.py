@@ -2,10 +2,10 @@ import ndef
 
 class NFCType2():
 
-    tags = []
-    ndefs = []   
-
     def __init__(self, data):
+        
+        self.tags = []
+        self.ndefs = []  
                
         if not data:
             raise ValueError

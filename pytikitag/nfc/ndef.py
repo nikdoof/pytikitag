@@ -2,9 +2,6 @@ from smartcard.util import toASCIIString
 
 class NDEFReader():
 
-    _records = []
-    items = []
-
     _uri_lookup = { 0x00: "", 0x01: "http://www.", 0x02: "https://www.",
                     0x03: "http://", 0x04: "https://", 0x05: "tel:",
                     0x06: "mailto:", 0x07: "ftp://anonymous:anonymous@",
@@ -35,6 +32,9 @@ class NDEFReader():
     
                 
     def __init__(self, ndef):
+
+        self._records = []
+        self.items = []
 
         if not ndef:
             raise ValueError
